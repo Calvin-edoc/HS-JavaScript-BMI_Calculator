@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*CSS reset end*/
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+/* header begin */
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+
+    background-color: #F5F5F5;
+}
+
+.header{
+    background-color: #424242;
+    height: 300px;
+}
+
+.logo{
+    float:left;
+    width: 117px;
+    height: 117px;
+    background-image:url('../images/BMICLogoB.png');
+    margin-top: 92px;
+    margin-left: 173px;
+    
+}
+
+.form{
+    float:left;
+    margin-top: 74px;
+    margin-left: 97px;
+}
+
+input[type="number"]{
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 23px;
+    margin-top: 7px;
+    text-indent: 20px;
+    position: relative;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+
+input::placeholder {
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);
+    line-height: 1.5 rem;
+}
+
+.btn-1{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    margin-top: 92px;
+    margin-right: 214px;
+    background: #FFD366;
+    border: 0px solid red;
+    cursor: pointer;
+
+    float: right;
+    line-height: 120px;
+}
+
+.btn-1:hover{
+    box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+}
+
+.btn-1:active{
+    background: #DEA921;
+}
+
+label{
+    font-size: 18px;
+    color: #FFD366;
+}
+
+.btn-2{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: #86D73F;
+    position: relative;
+
+    margin-top: 92px;
+    margin-right: 214px; 
+    float: right;
+    display: none;
+    text-align: center;
+    font-size: 32px; 
+}
+
+.btn-s{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../images/icons_loop.png);
+    background-repeat:no-repeat;
+    border: 3px solid #424242;
+    background-position:center center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.txt{
+    margin-top: 35px;
+}
+
+.txt > p{
+    font-size: 14px;
+}
+
+.str > p{
+    position: absolute;
+    left: 125px;
+    top: 40px;
+    font-size: 26px;
+
+    white-space: nowrap;
+    
+}
+
+.btn-s:hover{
+    
+    cursor: pointer;
+}
+
+
+/* header end */
+
+/* content begin */
+
+.content{
+    width: 624px;
+    margin: 0 auto;
+    min-height: 500px;
+
+}
+
+.content > p{
+    font-size: 24px;
+    color: #424242;
+    margin-top: 48px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.list{
+    margin-bottom: 16px;
+}
+
+.list li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #ffffff;
+    
+    font-size: 20px;
+    padding: 20px 11px;
+    margin-bottom: 16px;
+
+}
+
+.list span{
+    font-size: 12px;
+}
+
+
+/* content end */
+
+/* footer begin */
+
+
+.footer{
+    background: #FFD366;
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.footer-logo{
+    background-image:url('../images/BMICLogo.png');
+    width: 55px;
+    height: 55px;
+
+}
+
+
+/* footer end */
